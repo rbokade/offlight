@@ -16,7 +16,6 @@ from types import SimpleNamespace as SN
 from utils.logging import Logger
 from utils.timehelper import time_left, time_str
 
-# from learners import REGISTRY as le_REGISTRY
 from runners import REGISTRY as r_REGISTRY
 
 from controllers import REGISTRY as mac_REGISTRY
