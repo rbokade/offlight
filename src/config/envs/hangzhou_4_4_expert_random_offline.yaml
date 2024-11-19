@@ -1,0 +1,143 @@
+env: tsc
+
+env_args:
+  scenario: hangzhou_4_4
+  simulator_backend: "cityflow"
+  map_name: hangzhou_4_4
+  misc:
+    reward_gamma: 0.0
+  cityflow:
+    seed: 42
+    save_replay: False  
+    episode_limit: 360
+    flow_rate_type: "random"
+    flow_files: [
+      "randomized/high/0__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/1__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/2__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/3__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/4__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/5__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/6__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/7__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/8__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/9__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/10__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/11__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/12__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/13__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/14__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/15__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/16__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/17__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/18__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/19__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/20__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/21__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/22__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/23__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/24__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/25__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/26__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/27__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/28__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/29__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/30__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/31__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/32__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/33__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/34__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/35__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/36__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/37__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/38__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/39__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/40__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/41__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/42__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/43__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/44__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/45__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/46__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/47__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/48__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/49__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/50__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/51__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/52__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/53__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/54__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/55__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/56__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/57__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/58__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/59__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/60__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/61__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/62__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/63__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/64__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/65__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/66__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/67__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/68__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/69__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/70__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/71__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/72__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/73__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/74__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/75__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/76__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/77__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/78__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/79__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/80__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/81__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/82__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/83__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/84__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/85__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/86__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/87__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/88__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/89__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/90__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/91__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/92__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/93__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/94__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/95__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/96__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/97__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/98__hangzhou_4_4__gaussian_flows.json",
+      "randomized/high/99__hangzhou_4_4__gaussian_flows.json",
+    ]
+  signal:
+    observation_space: lane_features
+    visibility: 10
+  network:
+    control_scheme: decentralized
+
+test_greedy: True
+test_nepisode: 10  # (10 episodes = 1 simulation hour, 1 pymarl step = 5 sim seconds, 1 episode = 72 pymarl steps)
+test_interval: 50  # after 200 episodes
+log_interval: 50  # after 20 episodes
+runner_log_interval: 50
+learner_log_interval: 50
+save_model: True
+save_model_interval: 1000
+
+t_max: 10000  # (50000 episodes = 5000 sim hours)
+
+use_cuda: False
+use_tensorboard: True
+
+# offline_data_folder: "jinan_3_4_results/collected_data"
+offline_batch_size: 128
+offline_data_folder: ""
+offline_bottom_data_path: "high_hangzhou_4_4_results/collected_data"
+offline_data_quality: ["expert", "random"]
+offline_max_buffer_size: 6000
+offline_data_shuffle: True
+offline_data_type: "h5"

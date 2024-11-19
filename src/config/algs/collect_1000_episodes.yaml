@@ -1,0 +1,21 @@
+# --- MAPPO specific parameters ---
+
+name: "collect_expert"
+
+evaluate: True
+num_episodes_collected: 1000
+offline_data_controller: "expert"
+results_save_dir: "offline_data/collect_expert"
+
+controller_mac: "offline_mac"
+hidden_dim: 128
+use_rnn: True
+obs_agent_id: True
+obs_last_action: True
+obs_individual_obs: False
+action_selector: "soft_policies"
+agent_output_type: "pi_logits"
+mask_before_softmax: True
+use_cuda: False
+# model_save_dir: "1000_episodes_jinan_3_4_results/models/ippo_seed0_jinan_3_4_2024_09_28_20_13_14/576288"
+model_save_dir: "1000_episodes_hangzhou_4_4_results/models/ippo_seed0_hangzhou_4_4_2024_09_28_20_29_07/576288"

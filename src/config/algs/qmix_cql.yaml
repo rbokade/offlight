@@ -1,0 +1,39 @@
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 5000
+evaluation_epsilon: 0.0
+buffer_size: 5000
+batch_size: 32
+
+mac: "offline_mac"
+runner: "episode"
+
+agent: off_rnn
+use_rnn: True
+hidden_dim: 128
+agent_output_type: "q"
+
+double_q: True
+target_update_interval_or_tau: 200
+
+learner: "offline_q_learner"
+lr: 0.001
+
+mixer: 
+cal_target: "raw"
+td_lambda: 0.3
+use_local_rewards: True
+
+cql_alpha: 1.0
+cql_type: "global_raw"
+raw_sample_actions: 10
+
+standardise_rewards: True
+standardise_returns: True
+
+importance_sampling: False
+offline_data_shuffle: False
+
+name: "qmix_cql"
+use_cuda: False

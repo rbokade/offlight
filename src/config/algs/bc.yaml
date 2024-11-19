@@ -1,0 +1,30 @@
+# --- BC specific parameters ---
+
+# use multinomial selector
+action_selector: "multinomial"
+epsilon_start: .5
+epsilon_finish: .01
+epsilon_anneal_time: 5000
+
+runner: "episode"
+
+# buffer_size: 10
+batch_size: 8
+
+# use the BC_Learner to train
+agent_output_type: "pi_logits"
+learner: "bc_learner"
+double_q: True
+mixer: 
+
+# agent type
+agent: "rnn"
+use_rnn: True
+weight_decay: 0.0
+
+standardise_rewards: True
+standardise_returns: True
+
+# mac
+mac: "basic_mac"
+name: "bc"

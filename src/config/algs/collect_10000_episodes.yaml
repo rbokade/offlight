@@ -1,0 +1,8 @@
+# --- MAPPO specific parameters ---
+
+name: "collect_sotl"
+
+evaluate: True
+num_episodes_collected: 10000
+offline_data_controller: "sotl"
+results_save_dir: "offline_data/collect_sotl"

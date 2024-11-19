@@ -1,0 +1,45 @@
+# --- MAPPO specific parameters ---
+
+action_selector: "soft_policies"
+mask_before_softmax: True
+
+runner: "parallel"
+
+buffer_size: 4
+batch_size_run: 4
+batch_size: 4
+
+# update the target network every {} training steps
+target_update_interval_or_tau: 200
+
+lr: 0.0003
+
+obs_agent_id: True
+obs_last_action: True
+obs_individual_obs: False
+
+agent_output_type: "pi_logits"
+hidden_dim: 64
+entropy_coef: 0.005
+use_rnn: True
+standardise_returns: True
+standardise_rewards: True
+q_nstep: 72 # 1 corresponds to normal r + gammaV
+critic_type: "cv_critic"
+epochs: 2
+eps_clip: 0.2
+
+name: "mappo_implicit_comm"
+comm_type: "implicit"
+agent: "implicit_comm"
+learner: "comm_ppo_learner"
+mac: "implicit_comm_mac"
+message_selector: "soft_policies"
+comm: True
+n_msg_bits: 2
+noisy_comm: False
+comm_channel: "awgn"
+burst_probability: 0.1
+burst_noise_magnitude: 10
+std_noise: 0.5
+use_local_rewards: False

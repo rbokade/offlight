@@ -1,0 +1,145 @@
+env: tsc
+
+env_args:
+  scenario: jinan_3_4
+  simulator_backend: "cityflow"
+  map_name: jinan_3_4
+  misc:
+    reward_gamma: 0.0
+  cityflow:
+    seed: 42
+    save_replay: False
+    episode_limit: 360
+    flow_rate_type: "random"
+    flow_files: [
+      "randomized/high/0__jinan_3_4__gaussian_flows.json",
+      "randomized/high/1__jinan_3_4__gaussian_flows.json",
+      "randomized/high/2__jinan_3_4__gaussian_flows.json",
+      "randomized/high/3__jinan_3_4__gaussian_flows.json",
+      "randomized/high/4__jinan_3_4__gaussian_flows.json",
+      "randomized/high/5__jinan_3_4__gaussian_flows.json",
+      "randomized/high/6__jinan_3_4__gaussian_flows.json",
+      "randomized/high/7__jinan_3_4__gaussian_flows.json",
+      "randomized/high/8__jinan_3_4__gaussian_flows.json",
+      "randomized/high/9__jinan_3_4__gaussian_flows.json",
+      "randomized/high/10__jinan_3_4__gaussian_flows.json",
+      "randomized/high/11__jinan_3_4__gaussian_flows.json",
+      "randomized/high/12__jinan_3_4__gaussian_flows.json",
+      "randomized/high/13__jinan_3_4__gaussian_flows.json",
+      "randomized/high/14__jinan_3_4__gaussian_flows.json",
+      "randomized/high/15__jinan_3_4__gaussian_flows.json",
+      "randomized/high/16__jinan_3_4__gaussian_flows.json",
+      "randomized/high/17__jinan_3_4__gaussian_flows.json",
+      "randomized/high/18__jinan_3_4__gaussian_flows.json",
+      "randomized/high/19__jinan_3_4__gaussian_flows.json",
+      "randomized/high/20__jinan_3_4__gaussian_flows.json",
+      "randomized/high/21__jinan_3_4__gaussian_flows.json",
+      "randomized/high/22__jinan_3_4__gaussian_flows.json",
+      "randomized/high/23__jinan_3_4__gaussian_flows.json",
+      "randomized/high/24__jinan_3_4__gaussian_flows.json",
+      "randomized/high/25__jinan_3_4__gaussian_flows.json",
+      "randomized/high/26__jinan_3_4__gaussian_flows.json",
+      "randomized/high/27__jinan_3_4__gaussian_flows.json",
+      "randomized/high/28__jinan_3_4__gaussian_flows.json",
+      "randomized/high/29__jinan_3_4__gaussian_flows.json",
+      "randomized/high/30__jinan_3_4__gaussian_flows.json",
+      "randomized/high/31__jinan_3_4__gaussian_flows.json",
+      "randomized/high/32__jinan_3_4__gaussian_flows.json",
+      "randomized/high/33__jinan_3_4__gaussian_flows.json",
+      "randomized/high/34__jinan_3_4__gaussian_flows.json",
+      "randomized/high/35__jinan_3_4__gaussian_flows.json",
+      "randomized/high/36__jinan_3_4__gaussian_flows.json",
+      "randomized/high/37__jinan_3_4__gaussian_flows.json",
+      "randomized/high/38__jinan_3_4__gaussian_flows.json",
+      "randomized/high/39__jinan_3_4__gaussian_flows.json",
+      "randomized/high/40__jinan_3_4__gaussian_flows.json",
+      "randomized/high/41__jinan_3_4__gaussian_flows.json",
+      "randomized/high/42__jinan_3_4__gaussian_flows.json",
+      "randomized/high/43__jinan_3_4__gaussian_flows.json",
+      "randomized/high/44__jinan_3_4__gaussian_flows.json",
+      "randomized/high/45__jinan_3_4__gaussian_flows.json",
+      "randomized/high/46__jinan_3_4__gaussian_flows.json",
+      "randomized/high/47__jinan_3_4__gaussian_flows.json",
+      "randomized/high/48__jinan_3_4__gaussian_flows.json",
+      "randomized/high/49__jinan_3_4__gaussian_flows.json",
+      "randomized/high/50__jinan_3_4__gaussian_flows.json",
+      "randomized/high/51__jinan_3_4__gaussian_flows.json",
+      "randomized/high/52__jinan_3_4__gaussian_flows.json",
+      "randomized/high/53__jinan_3_4__gaussian_flows.json",
+      "randomized/high/54__jinan_3_4__gaussian_flows.json",
+      "randomized/high/55__jinan_3_4__gaussian_flows.json",
+      "randomized/high/56__jinan_3_4__gaussian_flows.json",
+      "randomized/high/57__jinan_3_4__gaussian_flows.json",
+      "randomized/high/58__jinan_3_4__gaussian_flows.json",
+      "randomized/high/59__jinan_3_4__gaussian_flows.json",
+      "randomized/high/60__jinan_3_4__gaussian_flows.json",
+      "randomized/high/61__jinan_3_4__gaussian_flows.json",
+      "randomized/high/62__jinan_3_4__gaussian_flows.json",
+      "randomized/high/63__jinan_3_4__gaussian_flows.json",
+      "randomized/high/64__jinan_3_4__gaussian_flows.json",
+      "randomized/high/65__jinan_3_4__gaussian_flows.json",
+      "randomized/high/66__jinan_3_4__gaussian_flows.json",
+      "randomized/high/67__jinan_3_4__gaussian_flows.json",
+      "randomized/high/68__jinan_3_4__gaussian_flows.json",
+      "randomized/high/69__jinan_3_4__gaussian_flows.json",
+      "randomized/high/70__jinan_3_4__gaussian_flows.json",
+      "randomized/high/71__jinan_3_4__gaussian_flows.json",
+      "randomized/high/72__jinan_3_4__gaussian_flows.json",
+      "randomized/high/73__jinan_3_4__gaussian_flows.json",
+      "randomized/high/74__jinan_3_4__gaussian_flows.json",
+      "randomized/high/75__jinan_3_4__gaussian_flows.json",
+      "randomized/high/76__jinan_3_4__gaussian_flows.json",
+      "randomized/high/77__jinan_3_4__gaussian_flows.json",
+      "randomized/high/78__jinan_3_4__gaussian_flows.json",
+      "randomized/high/79__jinan_3_4__gaussian_flows.json",
+      "randomized/high/80__jinan_3_4__gaussian_flows.json",
+      "randomized/high/81__jinan_3_4__gaussian_flows.json",
+      "randomized/high/82__jinan_3_4__gaussian_flows.json",
+      "randomized/high/83__jinan_3_4__gaussian_flows.json",
+      "randomized/high/84__jinan_3_4__gaussian_flows.json",
+      "randomized/high/85__jinan_3_4__gaussian_flows.json",
+      "randomized/high/86__jinan_3_4__gaussian_flows.json",
+      "randomized/high/87__jinan_3_4__gaussian_flows.json",
+      "randomized/high/88__jinan_3_4__gaussian_flows.json",
+      "randomized/high/89__jinan_3_4__gaussian_flows.json",
+      "randomized/high/90__jinan_3_4__gaussian_flows.json",
+      "randomized/high/91__jinan_3_4__gaussian_flows.json",
+      "randomized/high/92__jinan_3_4__gaussian_flows.json",
+      "randomized/high/93__jinan_3_4__gaussian_flows.json",
+      "randomized/high/94__jinan_3_4__gaussian_flows.json",
+      "randomized/high/95__jinan_3_4__gaussian_flows.json",
+      "randomized/high/96__jinan_3_4__gaussian_flows.json",
+      "randomized/high/97__jinan_3_4__gaussian_flows.json",
+      "randomized/high/98__jinan_3_4__gaussian_flows.json",
+      "randomized/high/99__jinan_3_4__gaussian_flows.json",
+    ]
+  signal:
+    observation_space: lane_features
+    visibility: 10
+  network:
+    control_scheme: decentralized
+
+test_greedy: True
+test_nepisode: 10  # (10 episodes = 1 simulation hour, 1 pymarl step = 5 sim seconds, 1 episode = 72 pymarl steps)
+test_interval: 50  # after 200 episodes
+log_interval: 50  # after 20 episodes
+runner_log_interval: 50
+learner_log_interval: 50
+save_model: True
+save_model_interval: 1000
+
+t_max: 10000  # (50000 episodes = 5000 sim hours)
+
+use_cuda: False
+use_tensorboard: True
+
+# offline_data_folder: "jinan_3_4_results/collected_data"
+offline_batch_size: 128
+offline_data_folder: ""
+offline_bottom_data_path: "high_jinan_3_4_results/collected_data"
+offline_data_quality: ["fixed_time", "greedy", "max_pressure", "sotl", "random", "expert"]
+offline_max_buffer_size: 6000
+offline_data_shuffle: True
+offline_data_type: "h5"
+
+# transition_model_path: "jinan_3_4_results/models/dynamics_seed253666692_jinan_3_4_2024_09_24_19_37_10/1/dynamics_model.th"
