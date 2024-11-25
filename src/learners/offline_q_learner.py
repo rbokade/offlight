@@ -138,11 +138,9 @@ class OfflineQLearner:
             priorities = batch["priorities"]
             priorities = priorities.unsqueeze(-1)
             priorities = priorities.expand_as(importance_weights)
-            adjusted_weights = importance_weights * priorities
-            adjusted_weights = adjusted_weights / (
-                adjusted_weights.sum(dim=(1, 2), keepdim=True) + 1e-6
-            )
-            adjusted_weights = th.clamp(adjusted_weights, max=10.0)
+            beta = getattr(self.args, "priority_beta", 1.0)
+            adjusted_weights = importance_weights / (priorities**beta + 1e-6)
+            adjusted_weights = adjusted_weights / (adjusted_weights.mean() + 1e-6)
             masked_td_error = (td_error**2) * mask * adjusted_weights
         else:
             masked_td_error = (td_error**2) * mask
