@@ -18,8 +18,8 @@ python src/main.py --offline --config=offline_alg_config_file --env-config=env_c
 
 ### Parameters:
 
-`collect_config_file`: Configuration file for data collection
-`env_config_file`: Environment configuration file
-`offline_data_controller`: Type of controller used for data collection 
-`model_save_dir`: Directory where MARL/`expert`  controller was stored
-`env_args.map_name`: Name of the environment map
+- `collect_config_file`: Configuration file for data collection
+- `env_config_file`: Environment configuration file
+- `offline_data_controller`: Type of controller used for data collection 
+- `model_save_dir`: Directory where MARL/`expert`  controller was stored
+- `env_args.map_name`: Name of the environment map
